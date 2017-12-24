@@ -8,10 +8,12 @@ function yn(){
   do
     read ANS
     case $ANS in
-      "Y" | "y" | "Yes" | "YES" | "yes" ) echo 1
-                  break;;
-      "N" | "n" | "No" | "NO" | "no" ) echo 0
-                  break;;
+      "Y" | "y" | "Yes" | "YES" | "yes" )
+        echo 1
+        break;;
+      "N" | "n" | "No" | "NO" | "no" )
+        echo 0
+        break;;
     esac
   done
 }
