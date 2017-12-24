@@ -25,11 +25,18 @@ fi
 #Change iptable
 echo "Change iptable [y/n]"
 if [ `yn` = 1 ]; then
-  sh ./function/change_iptable.sh
+  sh ./function/iptable_change.sh
 else
   echo "Skip changing iptable"
 fi
 
+#ruby install
+echo "Install ruby [y/n]"
+if [ `yn` = 1 ]; then
+  sh ./function/ruby_install.sh
+else
+  echo "Skip installing ruby"
+fi
 
 echo "Setting has finished"
 
